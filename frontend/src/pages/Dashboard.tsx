@@ -19,7 +19,7 @@ interface Metric {
   updated_at: string;
 }
 
-// Program icons & accent colors
+
 const programMeta: Record<string, { icon: React.ElementType; accent: string; gradient: string; badge: string }> = {
   strength: {
     icon: Dumbbell,
