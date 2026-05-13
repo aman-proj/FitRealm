@@ -149,13 +149,8 @@ DATABASE_URL=postgres://user:password@host:port/database_name
 JWT_SECRET=your_jwt_secret_key
 ```
 
-## 10. Screenshots placeholders
 
-![Login Screen Placeholder](./assets/login.png)
-![Dashboard Screen Placeholder](./assets/dashboard.png)
-![Program Switch Placeholder](./assets/program_switch.png)
-
-## 11. Folder Structure
+## 10. Folder Structure
 
 ```text
 FitRealm/
@@ -182,18 +177,18 @@ FitRealm/
     └── package.json
 ```
 
-## 12. Future Improvements
+## 11. Future Improvements
 
 - Implementation of Recharts to display historical metric progress over time.
 - Implementation of a user settings page.
 - Addition of program-specific target goals.
 
-## 13. Evaluation-Focused Explanation
+## 12. Evaluation-Focused Explanation
 
 - **Frontend Isolation**: State management explicitly uses `setMetrics([])` right before initiating the scoped fetch. This prevents the brief appearance of stale data from a previous program while the network request is pending.
 - **Backend Routing**: Security is maintained by strictly verifying `req.user.id === req.params.user_id` preventing IDOR (Insecure Direct Object Reference) attacks, in addition to scoping by `program_type` and `program_id`.
 
-## 14. Complete User Journey & Data Isolation Flow
+## 13. Complete User Journey & Data Isolation Flow
 
 Here is the complete user journey in FitRealm, step-by-step, explaining exactly how the code perfectly fulfills the strict data isolation requirement:
 
