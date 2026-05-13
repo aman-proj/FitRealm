@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/a40c2ef5-f511-461f-8602-8f33d38e4a04
+
 # FitRealm - Multi-Tenant Fitness Tracker
 
 FitRealm is a modern, full-stack fitness tracking web application built to enforce strict multi-tenant, program-based data isolation. It allows users to join multiple fitness programs while ensuring that their metrics and progress data never leak across different program contexts.
